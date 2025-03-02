@@ -7,7 +7,7 @@ import events from "./events";
 import commands from "./commands";
 
 export const db = knex({
-  client: "mysql",
+  client: "mysql2",
   connection: {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT as unknown as number,
